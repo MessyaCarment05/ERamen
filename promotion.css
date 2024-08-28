@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+header
+{
+    position:sticky;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    background-color: black;
+    z-index:1;
+}
+li
+{
+    list-style: none;
+}
+.nav-link
+{
+    color:white;
+    text-decoration: none;
+}
+.navbar
+{
+    height:150px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 24px;
+}
+.nav-menu
+{
+    display:flex;   
+    justify-content: space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.nav-link
+{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover
+{
+    color:gray;
+}
+
+.hamburger
+{
+    display:none;
+    cursor: pointer;
+}
+
+.bar
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:white;
+}
+
+.image-slide
+{
+    width:100%;
+    position:relative;
+}
+.image-slide .slide 
+{
+
+    width:100%;
+    display:none;
+}
+.image-slide .slide img
+{
+    width:100%;
+    
+    animation-name: fade;
+    animation-duration:1s;
+}
+.image-slide .navigation
+{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+.image-slide .navigation .prev, .image-slide .navigation .next
+{
+    cursor:pointer;
+    padding:16px;
+    font-weight:bold;
+    font-size:20px;
+    color:white;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    transition:0.6 ease;
+}
+
+.image-slide .navigation .prev:hover, .image-slide .navigation .next:hover
+{
+    background:rgba(0,0,0,1)
+}
+
+@keyframes fade 
+{
+    from{opacity: 0.3}
+    to{opacity: 1}
+}
+.good-deals-wrapper
+{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.tulisan-good-deals
+{
+    color: #e0ac1a;
+    font-size:80px;
+}
+.keterangan-good-deals
+{
+    width:700px;
+    text-align:center;
+    font-size:30px;
+}
+.button
+{
+    background-color: #343337;
+    border-radius: 30px;
+    height:85px;
+    width:240px;
+    font-weight:bold;
+    color:white;
+    font-size:30px;
+    border:none;
+    transition:0.3s;
+}
+.button:hover{
+    background-color: red;
+}
+.footer
+{
+    background-color: #2d2a30;
+  
+    box-sizing:border-box;
+    widows:100%;
+    text-align:left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+   
+
+}
+.footer .footer-left, .footer .footer-center, .footer .footer-right
+{
+    display: inline-block;
+    vertical-align: top;
+    ;
+}
+
+.footer .footer-left
+{
+    width:30%
+
+}
+
+.footer h3
+{
+    color:#ffff;
+    font: normal 36px 'cookie', cursive;
+    margin:0;
+}
+
+.footer h3 span
+{
+    color:#e0ac1c;
+}
+
+.footer .footer-links
+{
+    color:#ffff;
+    margin: 20px 0 12px;
+}
+
+.footer .footer-links a
+{
+    display: inline-block;
+    line-height:1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .footer-company-name
+{
+    color: #8f9296;
+    font-size:14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-center
+{
+    width: 35%;
+}
+
+.footer .footer-center i
+{
+    background-color: #33383b;
+    color: #ffff;
+    font-size: 25px;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    text-align: center;
+    line-height:42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope
+{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p
+{
+    display: inline-block;
+    color: #ffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size :14px;
+    line-height:2;
+}
+
+.footer .footer-center p a
+{
+    color: #e0ac1a;
+    text-decoration: none;
+}
+
+.footer .footer-right
+{
+    width:30%;
+}
+
+.footer .footer-company-about
+{
+    line-height: 20px;
+    color : #92999f;
+    font-size:13px;
+    font-weight:normal;
+    margin:0;
+}
+
+.footer .footer-company-about span
+{
+    display: block;
+    color: #ffff;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.footer-links a:hover
+{
+    color: #3f71ea
+}
+/* dekstop */
+@media (max-width: 991px)
+{
+    .image-slide
+    {
+        width:100%;
+        height:auto;
+    }
+    .image-slide .slide 
+    {
+
+        width:100%;
+       height:auto;
+    }
+   
+    .image-slide .slide img
+    {
+        width:100%;
+        height:auto;
+       
+    }
+    .image-slide .navigation .prev, .image-slide .navigation .next
+    {
+        font-size:18px;
+        padding:13px;
+    }
+    .good-deals-wrapper
+    {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        height: 60vh;
+        width: 100%;
+
+    }
+    .gambar-good
+    {
+        height:320px;
+        width:700px;
+    }
+    .tulisan-good-deals
+    {
+        color: #e0ac1a;
+        font-size:60px;
+    }
+    .keterangan-good-deals
+    {
+        width:650px;
+        font-size:28px;
+        text-align:center;
+    }
+    .footer-links, .footer .footer-left, .footer .footer-center, .footer .footer-right
+    {
+        display: block;
+        width:100%;
+        margin-bottom:40px;
+        text-align: center;
+    }
+    .footer .footer-center i
+    {
+        margin-left:0;
+    }
+    
+  
+}
+/* tablet */
+@media (max-width: 768px)
+{
+    .hamburger
+    {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2)
+    {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1)
+    {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3)
+    {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu
+    {
+        position:fixed;
+        left:-100%;
+        top:70px;
+        gap:0;
+        flex-direction:column;
+        background-color: black;
+        width:100%;
+        text-align:center;
+        transition:0.3s;
+    
+    }
+    .nav-item
+    {
+        margin: 16px 0;
+    }
+    .nav-menu.active
+    {
+        left:0;
+    }
+    .image-slide
+    {
+        width:100%;
+        height:auto;
+    }
+    .image-slide .slide 
+    {
+
+        width:100%;
+       height:auto;
+    }
+   
+    .image-slide .slide img
+    {
+        width:100%;
+        height:auto;
+       
+    }
+    .image-slide .navigation .prev, .image-slide .navigation .next
+    {
+        font-size:15px;
+        padding:10px;
+    }
+    .good-deals-wrapper
+    {
+        padding-top: 50px;
+        padding-bottom: 80px;
+        height: 45vh;
+        width: 100%;
+        
+    }
+    .gambar-good
+    {
+        height:170px;
+        width:430px;
+    }
+    .tulisan-good-deals
+    {
+        color: #e0ac1a;
+        font-size:45px;
+    }
+    .keterangan-good-deals
+    {
+        width:450px;
+        font-size:20px;
+        text-align:center;
+    }
+    .button
+    {
+        height:70px;
+        width:200px;
+        font-size:25px;
+    }
+    .footer-links, .footer .footer-left, .footer .footer-center, .footer .footer-right
+    {
+        display: block;
+        width:100%;
+        margin-bottom:40px;
+        text-align: center;
+    }
+    .footer .footer-center i
+    {
+        margin-left:0;
+    }
+
+   
+   
+}
+/* mobile phone */
+@media (max-width: 450px)
+{
+    .image-slide
+    {
+        width:100%;
+        height:auto;
+    }
+    .image-slide .slide 
+    {
+
+        width:100%;
+       height:auto;
+    }
+   
+    .image-slide .slide img
+    {
+        width:100%;
+        height:auto;
+       
+    }
+    .image-slide .navigation .prev, .image-slide .navigation .next
+    {
+        font-size:10px;
+        padding:5px;
+    }
+    .good-deals-wrapper
+    {
+        padding-top: 50px;
+        padding-bottom: 80px;
+        height: 30vh;
+        width: 100%;
+        
+    }
+    .gambar-good
+    {
+        height:120px;
+        width:250px;
+    }
+    .tulisan-good-deals
+    {
+        color: #e0ac1a;
+        font-size:35px;
+    }
+    .keterangan-good-deals
+    {
+        width:300px;
+        font-size:15px;
+        text-align:center;
+    }
+    .button
+    {
+        height:50px;
+        width:150px;
+        font-size:20px;
+    }
+     .footer-links, .footer .footer-left, .footer .footer-center, .footer .footer-right
+    {
+        display: block;
+        width:100%;
+        margin-bottom:20px;
+        text-align: center;
+    }
+    .footer .footer-center i
+    {
+        margin-left:0;
+    }
+}

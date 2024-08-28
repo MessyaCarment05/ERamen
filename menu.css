@@ -1,0 +1,1663 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+header
+{
+    position:sticky;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    background-color: black;
+}
+li
+{
+    list-style: none;
+}
+.nav-link
+{
+    color:white;
+    text-decoration: none;
+}
+.navbar
+{
+    height:150px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 24px;
+}
+.nav-menu
+{
+    display:flex;   
+    justify-content: space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.nav-link
+{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover
+{
+    color:gray;
+}
+
+.hamburger
+{
+    display:none;
+    cursor: pointer;
+}
+
+.bar
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:white;
+}
+
+.food
+{
+   
+    padding-top:150px;
+    background-image: url("/assets/BackgroundFood.jpg");
+    width:100vw;
+    height:auto;
+    background-size: cover;
+    background-position:center;
+    padding-bottom: 50px;
+    
+}
+.tulisan-food
+{
+    padding-top:45px;
+    display: flex;
+    justify-content: center;
+    font-size:50px;
+    color:white;
+}
+.menu-food
+{
+  
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-top:50px;
+    flex-direction:column;
+}
+.food1
+{
+   
+    padding-top: 20px;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 300px;
+    color: white;
+    width:1000px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.food1-right
+{
+    padding-left: 50px;
+    padding-right: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+.nama-food1
+{
+    padding-left:35px;
+   
+    font-size:25px;
+    font-weight:bold;
+}
+.gambar-food1
+{
+    padding-left:30px;
+    padding-right: 5px;
+}
+.button-food1
+{
+    
+    background-color: #343337;
+    width:150px;
+    height:50px;
+    border-radius: 20px;
+    color:white;
+    font-size:20px;
+    border:none;
+    transition:0.5s;
+}
+.button-food1-wrapper
+{
+    padding-left:10px;
+    padding-right:15px;
+    padding-top:30px;
+}
+.button-food1:hover
+{
+    background-color: red;
+}
+.food2
+{
+   
+    padding-top: 20px;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 300px;
+    color: white;
+    width:1000px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.food2-right
+{
+    padding-left: 50px;
+    padding-right: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+.nama-food2
+{
+    padding-left:100px;
+    padding-right:30px;
+    font-size:25px;
+    font-weight:bold;
+}
+.gambar-food2
+{
+    padding-left:30px;
+    padding-right: 5px;
+}
+.button-food2
+{
+    
+    background-color: #343337;
+    width:150px;
+    height:50px;
+    border-radius: 20px;
+    color:white;
+    font-size:20px;
+    border:none;
+    transition:0.5s;
+}
+.button-food2-wrapper
+{
+    padding-left:10px;
+    padding-right:15px;
+    padding-top:30px;
+}
+.button-food2:hover
+{
+    background-color: red;
+}
+.food3
+{
+   
+    padding-top: 20px;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 300px;
+    color: white;
+    width:1000px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.food3-right
+{
+    padding-left: 50px;
+    padding-right: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+.nama-food3
+{
+    padding-left:100px;
+    padding-right:30px;
+    font-size:25px;
+    font-weight:bold;
+}
+.gambar-food3
+{
+    padding-left:30px;
+    padding-right: 5px;
+}
+.button-food3
+{
+    
+    background-color: #343337;
+    width:150px;
+    height:50px;
+    border-radius: 20px;
+    color:white;
+    font-size:20px;
+    border:none;
+    transition:0.5s;
+}
+.button-food3-wrapper
+{
+    padding-left:10px;
+    padding-right:15px;
+    padding-top:30px;
+}
+.button-food3:hover
+{
+    background-color: red;
+}
+.food4
+{
+   
+    padding-top: 20px;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 300px;
+    color: white;
+    width:1000px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.food4-right
+{
+    padding-left: 50px;
+    padding-right: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+.nama-food4
+{
+    padding-left:50px;
+    padding-right:10px;
+    font-size:25px;
+    font-weight:bold;
+}
+.gambar-food4
+{
+    padding-left:30px;
+    padding-right: 5px;
+}
+.button-food4
+{
+    
+    background-color: #343337;
+    width:150px;
+    height:50px;
+    border-radius: 20px;
+    color:white;
+    font-size:20px;
+    border:none;
+    transition:0.5s;
+}
+.button-food4-wrapper
+{
+    padding-left:10px;
+    padding-right:15px;
+    padding-top:20px;
+}
+.button-food4:hover
+{
+    background-color: red;
+}
+.food5
+{
+   
+    padding-top: 20px;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 300px;
+    color: white;
+    width:1000px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.food5-right
+{
+    padding-left: 50px;
+    padding-right: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+.nama-food5
+{
+    padding-left:65px;
+    padding-right:30px;
+    font-size:25px;
+    font-weight:bold;
+}
+.gambar-food5
+{
+    padding-left:30px;
+    padding-right: 5px;
+}
+.button-food5
+{
+    
+    background-color: #343337;
+    width:150px;
+    height:50px;
+    border-radius: 20px;
+    color:white;
+    font-size:20px;
+    border:none;
+    transition:0.5s;
+}
+
+.button-food5-wrapper
+{
+    padding-left:10px;
+    padding-right:15px;
+    padding-top:20px;
+}
+.button-food5:hover
+{
+    background-color: red;
+}
+.food6
+{
+   
+    padding-top: 20px;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 300px;
+    color: white;
+    width:1000px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.food6-right
+{
+    padding-left: 50px;
+    padding-right: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+.nama-food6
+{
+    padding-left:120px;
+    padding-right:30px;
+    font-size:25px;
+    font-weight:bold;
+}
+.gambar-food6
+{
+    padding-left:30px;
+    padding-right: 5px;
+}
+.button-food6
+{
+    
+    background-color: #343337;
+    width:150px;
+    height:50px;
+    border-radius: 20px;
+    color:white;
+    font-size:20px;
+    border:none;
+    transition:0.5s;
+}
+.button-food6-wrapper
+{
+    padding-left:10px;
+    padding-right:15px;
+    padding-top:30px;
+}
+.button-food6:hover
+{
+    background-color: red;
+}
+.food7
+{
+   
+    padding-top: 20px;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 300px;
+    color: white;
+    width:1000px;
+    border-radius: 20px;
+}
+
+.food7-right
+{
+    padding-left: 50px;
+    padding-right: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+.nama-food7
+{
+    padding-left:140px;
+    padding-right:30px;
+    font-size:25px;
+    font-weight:bold;
+}
+.gambar-food7
+{
+    padding-left:30px;
+    padding-right: 5px;
+}
+.button-food7
+{
+    
+    background-color: #343337;
+    width:150px;
+    height:50px;
+    border-radius: 20px;
+    color:white;
+    font-size:20px;
+    border:none;
+    transition:0.5s;
+}
+.button-food7-wrapper
+{
+    padding-left:10px;
+    padding-right:15px;
+    padding-top:30px;
+}
+.button-food7:hover
+{
+    background-color: red;
+}
+.beverages
+{
+   
+    padding-top:50px;
+    background-image: url("/assets/BackgroundBeverages.jpg");
+    width:100vw;
+    height:100vh;
+    background-size: cover;
+    background-position:center;
+    padding-bottom: 50px;
+    
+}
+.tulisan-beverages
+{
+    padding-top:40px;
+    display: flex;
+    justify-content: center;
+    font-size:50px;
+    color:white;
+}
+.menu-beverages
+{
+  
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-top:50px;
+    flex-direction:column;
+}
+.beverages1
+{
+   
+    padding-top: 20px;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 300px;
+    color: white;
+    width:1000px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.beverages1-right
+{
+    padding-left: 90px;
+    padding-right: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+.nama-beverages1
+{
+    padding-left:75px;
+    padding-right:0px;
+    font-size:25px;
+    font-weight:bold;
+}
+.gambar-beverages1
+{
+    padding-left:75px;
+    padding-right: 5px;
+}
+.button-beverages1
+{
+    
+    background-color: #343337;
+    width:150px;
+    height:50px;
+    border-radius: 20px;
+    color:white;
+    font-size:20px;
+    border:none;
+    transition:0.5s;
+}
+.button-beverages1-wrapper
+{
+    padding-left:10px;
+    padding-right:15px;
+    padding-top:30px;
+}
+.button-beverages1:hover
+{
+    background-color: red;
+}
+.beverages2
+{
+   
+    padding-top: 20px;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 300px;
+    color: white;
+    width:1000px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+.beverages2-right
+{
+    padding-left: 50px;
+    padding-right: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+.nama-beverages2
+{
+    padding-left:140px;
+    padding-right:30px;
+    font-size:25px;
+    font-weight:bold;
+}
+.gambar-beverages2
+{
+    padding-left:30px;
+    padding-right: 5px;
+}
+.button-beverages2
+{
+    
+    background-color: #343337;
+    width:150px;
+    height:50px;
+    border-radius: 20px;
+    color:white;
+    font-size:20px;
+    border:none;
+    transition:0.5s;
+}
+.button-beverages2-wrapper
+{
+    padding-left:10px;
+    padding-right:15px;
+    padding-top:30px;
+}
+.button-beverages2:hover
+{
+    background-color: red;
+}
+.footer
+{
+    background-color: #2d2a30;
+   
+    box-sizing:border-box;
+    widows:100%;
+    text-align:left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+   
+
+}
+.footer .footer-left, .footer .footer-center, .footer .footer-right
+{
+    display: inline-block;
+    vertical-align: top;
+    ;
+}
+
+.footer .footer-left
+{
+    width:30%
+
+}
+
+.footer h3
+{
+    color:#ffff;
+    font: normal 36px 'cookie', cursive;
+    margin:0;
+}
+
+.footer h3 span
+{
+    color:#e0ac1c;
+}
+
+.footer .footer-links
+{
+    color:#ffff;
+    margin: 20px 0 12px;
+}
+
+.footer .footer-links a
+{
+    display: inline-block;
+    line-height:1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .footer-company-name
+{
+    color: #8f9296;
+    font-size:14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-center
+{
+    width: 35%;
+}
+
+.footer .footer-center i
+{
+    background-color: #33383b;
+    color: #ffff;
+    font-size: 25px;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    text-align: center;
+    line-height:42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope
+{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p
+{
+    display: inline-block;
+    color: #ffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size :14px;
+    line-height:2;
+}
+
+.footer .footer-center p a
+{
+    color: #e0ac1a;
+    text-decoration: none;
+}
+
+.footer .footer-right
+{
+    width:30%;
+}
+
+.footer .footer-company-about
+{
+    line-height: 20px;
+    color : #92999f;
+    font-size:13px;
+    font-weight:normal;
+    margin:0;
+}
+
+.footer .footer-company-about span
+{
+    display: block;
+    color: #ffff;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.footer-links a:hover
+{
+    color: #3f71ea
+}
+/* Tablet Ukuran Besar*/
+@media (max-width: 991px)
+{
+
+    .food
+    {
+        background-size:cover;
+        width:100%;
+        height:auto;
+       
+    }
+    .tulisan-food
+    {
+        font-size:40px;
+    }
+    .gambar-makanan
+    {
+        padding-top:30px;
+        padding-left:8px;
+        height:160px;
+        width:200px;
+    }
+    .food1
+    {
+    
+        height: 300px;
+        margin-bottom:30px;
+        width:700px;
+    
+    }
+
+    .food1-right
+    {
+        font-size: 20px;
+    }
+    .nama-food1
+    {
+        padding-left:30px;
+        padding-right:1px;
+        font-size:18px;
+    }
+    .food2
+    {
+    
+        height: 300px;
+        margin-bottom:30px;
+        width:700px;
+    }
+
+    .food2-right
+    {
+        font-size: 20px;
+    }
+    .nama-food2
+    {
+        padding-left:85px;
+        padding-right:1px;
+        font-size:18px;
+    }
+    .food3
+    {
+    
+        height: 300px;
+        margin-bottom:30px;
+        width:700px;
+    }
+
+    .food3-right
+    {
+        font-size: 20px;
+    }
+    .nama-food3
+    {
+        padding-left:85px;
+        padding-right:1px;
+        font-size:18px;
+    }
+    .food4
+    {
+        height: 300px;
+        margin-bottom:30px;
+        width:700px;
+    }
+
+    .food4-right
+    {
+        font-size: 20px;
+    }
+    .nama-food4
+    {
+        padding-left:45px;
+        padding-right:1px;
+        font-size:18px;
+    }
+    .food5
+    {
+        height: 300px;
+        margin-bottom:30px;
+        width:700px;
+    }
+
+    .food5-right
+    {
+        font-size: 20px;
+    }
+    .nama-food5
+    {
+        padding-left:60px;
+        padding-right:1px;
+        font-size:18px;
+    }
+    .food6
+    {
+        height: 300px;
+        margin-bottom:30px;
+        width:700px;
+    }
+
+    .food6-right
+    {
+        font-size: 20px;
+    }
+    .nama-food6
+    {
+        padding-left:90px;
+        padding-right:1px;
+        font-size:18px;
+    }
+    .food7
+    {
+        height: 300px;
+        margin-bottom:30px;
+        width:700px;
+    }
+
+    .food7-right
+    {
+        font-size: 20px;
+    }
+    .nama-food7
+    {
+        padding-left:100px;
+        padding-right:1px;
+        font-size:18px;
+    }
+    .beverages
+    {
+        background-size:cover;
+        width:100%;
+        height:auto;
+       
+    }
+    .tulisan-beverages
+    {
+        font-size:40px;
+    }
+    .gambar-minuman1
+    {
+        padding-top:30px;
+        padding-left:0px;
+        height:180px;
+        width:180px;
+    }
+    .gambar-beverages1
+    {
+        padding-left:30px;
+    }
+    .beverages1
+    {
+    
+        height: 300px;
+        margin-bottom:30px;
+        width:700px;
+    
+    }
+    .gambar-minuman1
+    {
+        padding-top:30px;
+        padding-left:0px;
+        height:180px;
+        width:180px;
+    }
+    .gambar-beverages1
+    {
+        padding-left:30px;
+        padding-right:50px;
+    }
+    .beverages1-right
+    {
+        padding-left:20px;
+        font-size: 20px;
+    }
+    .nama-beverages1
+    {
+        padding-left:55px;
+        padding-right:1px;
+        font-size:18px;
+    }
+    .beverages2
+    {
+    
+        height: 300px;
+        margin-bottom:30px;
+        width:700px;
+    }
+    .gambar-minuman2
+    {
+        padding-top:30px;
+        padding-left:8px;
+        height:160px;
+        width:180px;
+    }
+    
+    .beverages2-right
+    {
+        font-size: 20px;
+    }
+    .nama-beverages2
+    {
+        padding-left:105px;
+        padding-right:1px;
+        font-size:18px;
+    }
+    .footer-links, .footer .footer-left, .footer .footer-center, .footer .footer-right
+    {
+        display: block;
+        width:100%;
+        margin-bottom:40px;
+        text-align: center;
+    }
+    .footer .footer-center i
+    {
+        margin-left:0;
+    }
+    
+  
+}
+/* tablet */
+@media (max-width: 768px)
+{
+    .hamburger
+    {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2)
+    {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1)
+    {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3)
+    {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu
+    {
+        position:fixed;
+        left:-100%;
+        top:70px;
+        gap:0;
+        flex-direction:column;
+        background-color: black;
+        width:100%;
+        text-align:center;
+        transition:0.3s;
+    
+    }
+    .nav-item
+    {
+        margin: 16px 0;
+    }
+    .nav-menu.active
+    {
+        left:0;
+    }
+    .food
+    {
+        background-size:cover;
+        width:100%;
+        height:auto;
+       
+    }
+    .gambar-makanan
+    {
+       
+        padding-top:30px;
+        padding-left:5px;
+        height:120px;
+        width:150px;
+    }
+    .food1
+    {
+    
+        height: 250px;
+        margin-bottom:30px;
+        width:450px;
+    
+    }
+
+    .food1-right
+    {
+        padding-right:5px;
+        padding-left:8px;
+        font-size: 18px;
+    }
+    .nama-food1
+    {
+        padding-left:12px;
+        padding-right:0px;
+        font-size:15px;
+    }
+     .button-food1
+    {
+        width:130px;
+        height:40px;
+        font-size:15px;
+    }
+    
+    .food2
+    {
+    
+        height: 250px;
+        margin-bottom:30px;
+        width:450px;
+    }
+
+    .food2-right
+    {
+        padding-right:5px;
+        padding-left:8px;
+        font-size: 18px;
+    }
+    .nama-food2
+    {
+        padding-left:70px;
+        padding-right:1px;
+        font-size:15px;
+    }
+    .button-food2
+    {
+        width:130px;
+        height:40px;
+        font-size:15px;
+    }
+    
+    .food3
+    {
+    
+        height: 250px;
+        margin-bottom:30px;
+        width:450px;
+    }
+
+    .food3-right
+    {
+        padding-right:5px;
+        padding-left:8px;
+        font-size: 18px;
+    }
+    .nama-food3
+    {
+        padding-left:65px;
+        padding-right:1px;
+        font-size:15px;
+    }
+    .button-food3
+    {
+        width:130px;
+        height:40px;
+        font-size:15px;
+    }
+    .food4
+    {
+        height: 250px;
+        margin-bottom:30px;
+        width:450px;
+    }
+
+    .food4-right
+    {
+        padding-right:5px;
+        padding-left:8px;
+        font-size: 18px;
+    }
+    .nama-food4
+    {
+        padding-left:25px;
+        padding-right:1px;
+        font-size:15px;
+    }
+    .button-food4
+    {
+        width:130px;
+        height:40px;
+        font-size:15px;
+    }
+    .food5
+    {
+        height: 250px;
+        margin-bottom:30px;
+        width:450px;
+    }
+
+    .food5-right
+    {
+        padding-right:5px;
+        padding-left:8px;
+        font-size: 18px;
+    }
+    .nama-food5
+    {
+        padding-left:40px;
+        padding-right:1px;
+        font-size:15px;
+    }
+    .button-food5
+    {
+        width:130px;
+        height:40px;
+        font-size:15px;
+    }
+    .food6
+    {
+        height: 250px;
+        margin-bottom:30px;
+        width:450px;
+    }
+
+    .food6-right
+    {
+        padding-right:5px;
+        padding-left:8px;
+        font-size: 18px;
+    }
+    .nama-food6
+    {
+        padding-left:70px;
+        padding-right:1px;
+        font-size:15px;
+    }
+    .button-food6
+    {
+        width:130px;
+        height:40px;
+        font-size:15px;
+    }
+    .food7
+    {
+       
+        height: 250px;
+        margin-bottom:30px;
+        width:450px;
+    }
+
+    .food7-right
+    {
+        padding-right:5px;
+        padding-left:8px;
+        font-size: 18px;
+    }
+    .nama-food7
+    {
+        padding-left:85px;
+        padding-right:1px;
+        font-size:15px;
+    }
+    .button-food7
+    {
+        width:130px;
+        height:40px;
+        font-size:15px;
+    }
+    .beverages
+    {
+        background-size:cover;
+        width:100%;
+        height:auto;
+       
+    }
+    
+    .beverages1
+    {
+    
+        height: 250px;
+        margin-bottom:30px;
+        width:450px;
+    
+    }
+    .gambar-minuman1
+    {
+        padding-top:10px;
+        padding-left:5px;
+        height:180px;
+        width:150px;
+    }
+    .gambar-beverages1
+    {
+        padding-left:30px;
+    }
+    .beverages1-right
+    {
+        padding-right:5px;
+        padding-left:0px;
+        font-size: 18px;
+    }
+    .nama-beverages1
+    {
+        padding-left:55px;
+        padding-right:0px;
+        font-size:15px;
+    }
+     .button-beverages1
+    {
+        width:130px;
+        height:40px;
+        font-size:15px;
+    }
+    
+    .beverages2
+    {
+    
+        height: 250px;
+        margin-bottom:30px;
+        width:450px;
+    }
+    .gambar-minuman2
+    {
+        padding-top:10px;
+        padding-left:5px;
+        height:160px;
+        width:140px;
+    }
+    .beverages2-right
+    {
+        padding-right:5px;
+        padding-left:40px;
+        font-size: 18px;
+    }
+    .nama-beverages2
+    {
+        padding-left:85px;
+        padding-right:1px;
+        font-size:15px;
+    }
+    .button-beverages2
+    {
+        width:130px;
+        height:40px;
+        font-size:15px;
+    }
+    .footer-links, .footer .footer-left, .footer .footer-center, .footer .footer-right
+    {
+        display: block;
+        width:100%;
+        margin-bottom:40px;
+        text-align: center;
+    }
+    .footer .footer-center i
+    {
+        margin-left:0;
+    }
+   
+}
+/* mobile phone */
+@media (max-width: 450px)
+{
+    .food
+    {
+        background-size:cover;
+        width:100%;
+        height:auto;
+       
+    }
+    .tulisan-food
+    {
+        font-size:30px;
+    }
+    .gambar-makanan
+    {
+        padding-top:30px;
+        padding-left:8px;
+        height:80px;
+        width:120px;
+    }
+    .food1
+    {
+        height: 180px;
+        margin-bottom:30px;
+        width:350px;
+    }
+
+    .food1-right
+    {
+        padding-top: 20px;
+        padding-left: 8px ;
+        font-size: 10px;
+    }
+    .nama-food1
+    {
+        padding-left:40px;
+        padding-right:0px;
+        font-size:10px;
+    }
+    .button-food1
+    { 
+        width:120px;
+        height:35px;
+        font-size:15px;
+    
+    }
+    .food2
+    {
+    
+        height: 180px;
+        margin-bottom:30px;
+        width:350px;
+    
+    }
+
+    .food2-right
+    {
+        padding-top: 20px;
+        padding-left: 8px ;
+        font-size: 10px;
+    }
+    .nama-food2
+    {
+        padding-left:70px;
+        padding-right:0px;
+        font-size:10px;
+    }
+    .button-food2
+    { 
+        width:120px;
+        height:35px;
+        font-size:15px;
+    
+    }
+    .food3
+    {
+    
+        height: 180px;
+        margin-bottom:30px;
+        width:350px;
+    
+    }
+
+    .food3-right
+    {
+        padding-top: 20px;
+        padding-left: 8px ;
+        font-size: 10px;
+    }
+    .nama-food3
+    {
+        padding-left:70px;
+        padding-right:0px;
+        font-size:10px;
+    }
+    .button-food3
+    { 
+        width:120px;
+        height:35px;
+        font-size:15px;
+    
+    }
+    .food4
+    {
+    
+        height: 180px;
+        margin-bottom:30px;
+        width:350px;
+    
+    }
+
+    .food4-right
+    {
+        padding-top: 20px;
+        padding-left: 8px ;
+        font-size: 10px;
+    }
+    .nama-food4
+    {
+        padding-left:40px;
+        padding-right:0px;
+        font-size:10px;
+    }
+    .button-food4
+    { 
+        width:120px;
+        height:35px;
+        font-size:15px;
+    
+    }
+    .food5
+    {
+    
+        height: 180px;
+        margin-bottom:30px;
+        width:350px;
+    
+    }
+
+    .food5-right
+    {
+        padding-top: 20px;
+        padding-left: 8px ;
+        font-size: 10px;
+    }
+    .nama-food5
+    {
+        padding-left:55px;
+        padding-right:0px;
+        font-size:10px;
+    }
+    .button-food5
+    { 
+        width:120px;
+        height:35px;
+        font-size:15px;
+    
+    }
+    .food6
+    {
+    
+        height: 180px;
+        margin-bottom:30px;
+        width:350px;
+    
+    }
+
+    .food6-right
+    {
+        padding-top: 20px;
+        padding-left: 8px ;
+        font-size: 10px;
+    }
+    .nama-food6
+    {
+        padding-left:70px;
+        padding-right:0px;
+        font-size:10px;
+    }
+    .button-food6
+    { 
+        width:120px;
+        height:35px;
+        font-size:15px;
+    
+    }
+    .food7
+    {
+    
+        height: 180px;
+        margin-bottom:30px;
+        width:350px;
+    
+    }
+
+    .food7-right
+    {
+        padding-top: 20px;
+        padding-left: 8px ;
+        font-size: 10px;
+    }
+    .nama-food7
+    {
+        padding-left:70px;
+        padding-right:0px;
+        font-size:10px;
+    }
+    .button-food7
+    { 
+        width:120px;
+        height:35px;
+        font-size:15px;
+    
+    }
+    .beverages
+    {
+        background-size:cover;
+        width:100%;
+        height:auto;
+       
+    }
+    
+    .beverages1
+    {
+    
+        height: 180px;
+        margin-bottom:30px;
+        width:350px;
+    
+    }
+    .gambar-minuman1
+    {
+        padding-top:0px;
+        padding-left:5px;
+        height:140px;
+        width:100px;
+    }
+    .gambar-beverages1
+    {
+        padding-left:30px;
+    }
+    .beverages1-right
+    {
+        padding-right:5px;
+        padding-left:0px;
+        font-size: 10px;
+    }
+    .nama-beverages1
+    {
+        padding-left:50px;
+        padding-right:0px;
+        font-size:10px;
+    }
+     .button-beverages1
+    {
+        width:120px;
+        height:35px;
+        font-size:15px;
+    }
+    
+    .beverages2
+    {
+    
+        height: 180px;
+        margin-bottom:30px;
+        width:350px;
+    }
+    .gambar-minuman2
+    {
+        padding-top:10px;
+        padding-left:5px;
+        height:120px;
+        width:120px;
+    }
+    .beverages2-right
+    {
+        padding-right:5px;
+        padding-left:40px;
+        font-size: 10px;
+    }
+    .nama-beverages2
+    {
+        padding-left:80px;
+        padding-right:1px;
+        font-size:10px;
+    }
+    .button-beverages2
+    {
+        width:120px;
+        height:35px;
+        font-size:15px;
+    }
+    .footer-links, .footer .footer-left, .footer .footer-center, .footer .footer-right
+    {
+        display: block;
+        width:100%;
+        margin-bottom:20px;
+        text-align: center;
+    }
+    .footer .footer-center i
+    {
+        margin-left:0;
+    }
+}

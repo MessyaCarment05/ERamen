@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header
+{
+   position: sticky;
+   top:0;
+   left:0;
+   right:0;
+   z-index:1;
+    width:100%;
+    background-color: black;
+}
+li
+{
+    list-style: none;
+}
+.nav-link
+{
+    color:white;
+    text-decoration: none;
+}
+.navbar
+{
+    
+    height:150px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 24px;
+}
+.nav-menu
+{
+    display:flex;   
+    justify-content: space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.nav-link
+{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover
+{
+    color:gray;
+}
+
+.hamburger
+{
+    display:none;
+    cursor: pointer;
+}
+
+.bar
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:white;
+}
+.about-wrapper
+{
+   
+    height:50vh;
+    width:100%;
+}
+.atas-wrapper
+{
+    background-color:#334d4d;
+    height:180px;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}  
+.atas
+{
+    color:white;
+    font-size:50px;
+    display: flex;
+    flex-direction:column;
+}
+.atas1
+{
+    display:flex;
+    justify-content: center;
+}
+.atas2
+{
+    display:flex;
+    justify-content: center;
+}
+
+.bawah
+{
+   
+    font-size:23px;
+    padding-top:90px;
+    display:flex;
+    justify-content:center;
+}
+.gambar-about
+{
+    border-radius:20px;
+}
+.tulisan-about
+{
+    width:420px;
+    padding-left:50px;
+}
+.history-wrapper
+{
+    padding-top:150px;
+    width:100%;
+}
+.atas-history-wrapper
+{
+    background-color:#334d4d;
+    height:180px;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}  
+.atas-history
+{
+    color:white;
+    font-size:50px;
+    
+}
+.timeline-section
+{
+   
+    background-color:black;
+    min-height:100vh;
+    padding:100px 15px;
+}
+.timeline-items
+{
+    max-width:1000px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+}
+.timeline-items::before
+{
+    content: '';
+    position: absolute;
+    width:2px;
+    height:100%;
+    background-color:#2f363e;
+    left:calc(50% - 1px);
+}
+.timeline-item
+{
+    margin-bottom:40px;
+    width:100%;
+    position:relative;
+}
+.timeline-item:last-child
+{
+    margin-bottom:0;
+}
+.timeline-item:nth-child(odd)
+{
+    padding-right:calc(50% + 30px);
+    text-align:right;
+}
+.timeline-item:nth-child(even)
+{
+    padding-left:calc(50% + 30px);
+}
+.timeline-dot
+{
+    height:16px;
+    width:16px;
+    background-color:#eaa023;
+    position:absolute;
+    left:calc(50% - 8px);
+    border-radius:50%;
+    top:10px;
+
+}
+.timeline-date
+{
+    font-size:18px;
+    color:#eaa023;
+    margin: 6px 0 15px;
+}
+.timeline-content
+{
+    background-color:#2f363e;
+    padding:30px;
+    border-radius:5px;
+}
+.timeline-content h3
+{
+    font-size:20px;
+    color:white;
+    margin: 0 0 15px;
+    text-transform:capitalize;
+    font-weight:500;
+}
+.timeline-content p
+{
+    color:#c8c8c8;
+    font-size:16px;
+    font-weight:300;
+    line-height:22px;
+}
+.visi-misi-wrapper
+{
+    padding-top:50px;
+    height:50vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+   
+}
+.visi-wrapper
+{
+    margin-bottom:50px;
+}
+.nama-visi
+{
+   display:flex;
+   justify-content: center;
+    font-size:55px;
+}
+.visi1
+{
+    color:#ff9900;
+    padding-right:5px;
+}
+.visi2
+{
+    color:#666699;
+}
+.isi-visi
+{
+   text-align: center;
+    font-size:30px;
+    width:700px;
+}
+.nama-misi
+{
+    display:flex;
+   justify-content: center;
+    display:flex;
+    font-size:55px;
+}
+.misi1
+{
+    color:#ff9900;
+    padding-right:5px;
+}
+.misi2
+{
+    color:#666699;
+}
+.isi-misi
+{
+   text-align: center;
+    font-size:30px;
+    width:700px;
+}
+.footer
+{
+    background-color: #2d2a30;
+   
+    box-sizing:border-box;
+    widows:100%;
+    text-align:left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+   
+
+}
+.footer .footer-left, .footer .footer-center, .footer .footer-right
+{
+    display: inline-block;
+    vertical-align: top;
+    ;
+}
+
+.footer .footer-left
+{
+    width:30%
+
+}
+
+.footer h3
+{
+    color:#ffff;
+    font: normal 36px 'cookie', cursive;
+    margin:0;
+}
+
+.footer h3 span
+{
+    color:#e0ac1c;
+}
+
+.footer .footer-links
+{
+    color:#ffff;
+    margin: 20px 0 12px;
+}
+
+.footer .footer-links a
+{
+    display: inline-block;
+    line-height:1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .footer-company-name
+{
+    color: #8f9296;
+    font-size:14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-center
+{
+    width: 35%;
+}
+
+.footer .footer-center i
+{
+    background-color: #33383b;
+    color: #ffff;
+    font-size: 25px;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    text-align: center;
+    line-height:42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope
+{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p
+{
+    display: inline-block;
+    color: #ffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size :14px;
+    line-height:2;
+}
+
+.footer .footer-center p a
+{
+    color: #e0ac1a;
+    text-decoration: none;
+}
+
+.footer .footer-right
+{
+    width:30%;
+}
+
+.footer .footer-company-about
+{
+    line-height: 20px;
+    color : #92999f;
+    font-size:13px;
+    font-weight:normal;
+    margin:0;
+}
+
+.footer .footer-company-about span
+{
+    display: block;
+    color: #ffff;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.footer-links a:hover
+{
+    color: #3f71ea
+}
+/* Tablet Besar*/
+@media (max-width: 991px)
+{
+    .atas-wrapper
+    {
+        height:150px;
+        width:100%;
+    }
+    .atas
+    {
+      
+        height:auto;
+        font-size:35px;
+    }
+    .gambar-about
+    {
+        height:220px;
+        width:300px;
+    }
+    .bawah
+    {
+        font-size:20px;
+    }
+    .atas-history-wrapper
+    {
+        height:125px;
+        width:100%;
+    }
+    .atas-history
+    {
+      
+        height:auto;
+        font-size:32px;
+    }
+    .visi-misi-wrapper
+    {
+        padding-bottom:50px;
+        width:100%;
+        height:auto;
+    }
+    .footer-links, .footer .footer-left, .footer .footer-center, .footer .footer-right
+    {
+        display: block;
+        width:100%;
+        margin-bottom:40px;
+        text-align: center;
+    }
+    .footer .footer-center i
+    {
+        margin-left:0;
+    }
+   
+    
+  
+}
+/* tablet */
+@media (max-width: 768px)
+{
+    .hamburger
+    {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2)
+    {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1)
+    {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3)
+    {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu
+    {
+        position:fixed;
+        left:-100%;
+        top:70px;
+        gap:0;
+        flex-direction:column;
+        background-color: black;
+        width:100%;
+        text-align:center;
+        transition:0.3s;
+    
+    }
+    .nav-item
+    {
+        margin: 16px 0;
+    }
+    .nav-menu.active
+    {
+        left:0;
+    }
+    .about-wrapper
+    {
+        height:60vh;
+        width:100%;
+    }
+    .atas-wrapper
+    {
+        height:125px;
+        width:100%;
+    }
+    .atas
+    {
+        width:100%;
+        height:auto;
+        font-size:30px;
+    }
+    
+    .gambar-about
+    {
+        height:210px;
+        width:280px;
+    }
+    .tulisan-about
+    {
+        padding-top:10px;
+        padding-left:12px;
+    }
+    .bawah
+    {
+        font-size:20px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+    }
+    
+    .atas-history-wrapper
+    {
+        height:100px;
+        width:100%;
+    }
+    .atas-history
+    {
+      
+        height:auto;
+        font-size:25px;
+    }
+    .timeline-items::before
+    {
+        left:7px;
+    }
+    .timeline-item:nth-child(odd)
+    {
+        padding-right:0;
+        text-align:left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even)
+    {
+        padding-left:37px;
+    }
+    .timeline-dot
+    {
+        left:0;
+    }
+     .visi-misi-wrapper
+    {
+        padding-bottom:50px;
+        height:auto;
+        width:100%;
+    }
+    .nama-visi
+    {
+        font-size:40px;
+    }
+    .isi-visi
+    {
+    
+        font-size:20px;
+        width:450px;
+    }
+    .nama-misi
+    {
+       
+        font-size:40px;
+    }
+    .isi-misi
+    {
+    
+        font-size:20px;
+        width:450px;
+    }
+    .footer-links, .footer .footer-left, .footer .footer-center, .footer .footer-right
+    {
+        display: block;
+        width:100%;
+        margin-bottom:40px;
+        text-align: center;
+    }
+    .footer .footer-center i
+    {
+        margin-left:0;
+    }
+
+}
+/* mobile phone */
+@media (max-width: 450px)
+{
+    .atas
+    {
+        width:100%;
+        height:auto;
+        font-size:25px;
+    }
+    .gambar-about
+    {
+        height:180px;
+        width:250px;
+    }
+    .tulisan-about
+    {
+        width:250px;
+        padding-top:10px;
+        padding-left:12px;
+    }
+    .bawah
+    {
+        font-size:18px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+    }
+    .atas-history-wrapper
+    {
+        height:85px;
+        width:100%;
+    }
+    .atas-history
+    {
+      
+        height:auto;
+        font-size:20px;
+    }
+     .visi-misi-wrapper
+    {
+        padding-bottom:50px;
+      width:100%;
+      height:auto;
+    }
+    .nama-visi
+    {
+        font-size:30px;
+    }
+    .isi-visi
+    {
+    
+        font-size:15px;
+        width:300px;
+    }
+    .nama-misi
+    {
+       
+        font-size:30px;
+    }
+    .isi-misi
+    {
+    
+        font-size:15px;
+        width:300px;
+    }
+    .footer-links, .footer .footer-left, .footer .footer-center, .footer .footer-right
+    {
+        display: block;
+        width:100%;
+        margin-bottom:20px;
+        text-align: center;
+    }
+    .footer .footer-center i
+    {
+        margin-left:0;
+    }
+}
